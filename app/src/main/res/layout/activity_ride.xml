@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/lightGray"
+    android:padding="16dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="12dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/driver_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/driver_label"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/darkText"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/trip_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/trip_price_label"
+                android:textSize="20sp"
+                android:textColor="@color/mediumText"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/origin_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/origin_label"
+                android:textSize="18sp"
+                android:textColor="@color/mediumText"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/destination_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/destination_label"
+                android:textSize="18sp"
+                android:textColor="@color/mediumText"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/total_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/distance_label"
+                android:textSize="18sp"
+                android:textColor="@color/mediumText"
+                android:layout_marginBottom="16dp" />
+
+            <RatingBar
+                android:id="@+id/rating_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="0.5"
+                android:layout_marginBottom="24dp" />
+
+            <Button
+                android:id="@+id/rate_driver_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/submit_rating"
+                android:textSize="16sp"
+                android:backgroundTint="@color/primary"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/my_rides_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/my_rides"
+                android:textSize="16sp"
+                android:backgroundTint="@color/secondary"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/logout_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/logout"
+                android:textSize="16sp"
+                android:backgroundTint="@color/alert"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

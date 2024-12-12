@@ -1,0 +1,167 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@color/white">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/logoutButton"
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:text="@string/logout"
+                    android:backgroundTint="@color/teal_700"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="start"
+                    android:layout_marginBottom="8dp"
+                    android:minHeight="48dp"
+                    android:minWidth="48dp"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/welcomeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/welcome_message"
+                    android:fontFamily="@font/lobster" />
+
+                <TextView
+                    android:id="@+id/ratingTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/your_rating"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black" />
+
+                <Spinner
+                    android:id="@+id/vehicleBrandSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/brands"
+                    android:prompt="@string/choose_brand"
+                    android:layout_marginBottom="16dp"
+                    android:padding="12dp"
+                    android:minHeight="48dp"
+                    android:spinnerMode="dialog"
+                    android:popupTheme="@style/CustomSpinnerStyle" />
+
+                <EditText
+                    android:id="@+id/otherBrandEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:hint="@string/enter_car"
+                    android:visibility="gone"
+                    android:layout_marginBottom="16dp"
+                    android:padding="12dp"
+                    android:minHeight="48dp" />
+
+                <EditText
+                    android:id="@+id/pricePerKmText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:hint="@string/enter_price"
+                    android:drawableStart="@drawable/baseline_euro_24"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edittext_background"
+                    android:padding="12dp"
+                    android:minHeight="48dp"
+                    android:layout_marginBottom="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_start_time"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="8dp" />
+
+                <EditText
+                    android:id="@+id/startTimeEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:hint="@string/start_time"
+                    android:background="@drawable/edittext_background"
+                    android:drawableStart="@drawable/baseline_hourglass_top_24"
+                    android:padding="12dp"
+                    android:minHeight="48dp"
+                    android:layout_marginBottom="20dp"
+                    android:focusable="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_end_time"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="16dp" />
+
+                <EditText
+                    android:id="@+id/endTimeEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:hint="@string/end_time"
+                    android:background="@drawable/edittext_background"
+                    android:drawableStart="@drawable/baseline_hourglass_bottom_24"
+                    android:padding="12dp"
+                    android:minHeight="48dp"
+                    android:layout_marginBottom="16dp"
+                    android:focusable="false" />
+
+                <Button
+                    android:id="@+id/saveButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/save"
+                    android:backgroundTint="@color/teal_700"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="16dp"
+                    android:minHeight="48dp"
+                    android:padding="12dp" />
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/viewPassengersButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/view_passengers"
+        android:backgroundTint="@color/teal_700"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/cardView"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:minHeight="48dp"
+        android:minWidth="48dp"
+        android:padding="12dp" />
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    card_view:cardCornerRadius="12dp"
+    card_view:cardElevation="8dp"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/driver_full_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/vehicleBrand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/driver_full_name"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:textColor="#555555" />
+
+        <TextView
+            android:id="@+id/pricePerKm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vehicleBrand"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:textColor="#555555" />
+        <RatingBar
+            android:id="@+id/driver_rating_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pricePerKm"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="4dp"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:isIndicator="true"
+            android:rating="4.0"
+            android:theme="@style/Widget.AppCompat.RatingBar.Small" />
+
+        <Button
+            android:id="@+id/select_driver_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:padding="8dp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/teal_700"
+            android:text="@string/select_driver"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

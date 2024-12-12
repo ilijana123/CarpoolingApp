@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">CarpoolingApp</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="google_maps_key">AIzaSyCbq2P2m1iAArm9U7GJ8iptANHM9e1D79Y</string>
+    <string name="choose_brand">Choose you car brand</string>
+    <string-array name="brands">
+        <item>Toyota</item>
+        <item>Peugeot</item>
+        <item>Audi</item>
+        <item>Mercedes</item>
+        <item>BMW</item>
+        <item>Citroen</item>
+        <item>Seat</item>
+        <item>Porsche</item>
+        <item>Other</item>
+    </string-array>
+    <string name="set_availability">Set Availability</string>
+    <string name="end_time">End Time (e.g., 10:35pm)</string>
+    <string name="end">End Time</string>
+    <string name="select_end_time">Select End Time</string>
+    <string name="select_start_time">Select Start Time</string>
+    <string name="start_time">Start Time (e.g., 9:15am)</string>
+    <string name="start">Start Time</string>
+    <string name="logout">Logout</string>
+    <string name="welcome_message">Welcome, %1$s %2$s!</string>
+    <string name="your_rating">Your rating: </string>
+    <string name="choose_destination">Choose your destination</string>
+    <string name="password">Password</string>
+    <string name="save">Save</string>
+    <string name="save_location">Select location</string>
+    <string name="go_to_driver_list">See available drivers</string>
+    <string name="driver_label">Driver: %1$s %2$s</string>
+    <string name="passenger_label">Passenger: %1$s %2$s</string>
+    <string name="trip_price_label">Total Price: $%1$.2f</string>
+    <string name="origin_label">Origin: %1$s</string>
+    <string name="destination_label">Destination: %1$s</string>
+    <string name="distance_label">Distance: %.2f km</string>
+    <string name="submit_rating">Submit Rating</string>
+    <string name="my_rides">My Rides</string>
+    <string name="back">Back to driver</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="rate_your_rides">Rate your rides!</string>
+    <string name="select_driver">Select driver</string>
+    <string name="back_to_map">Back to Map</string>
+    <string name="carpooling">Carpooling</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="email">Email</string>
+    <string name="sign_up">Sign up</string>
+    <string name="go_to_login">Already have an account? Login</string>
+    <string name="view_passengers">View Passengers</string>
+    <string name="enter_price">Enter price per km</string>
+    <string name="enter_car">Enter your car brand</string>
+    <string name="enter_email">Enter your email</string>
+    <string name="login">Login</string>
+    <string name="go_to_sign_up">Don\'t have an account? Sign up</string>
+    <string name="enter_password">Enter your password</string>
+    <string name="driver">Driver</string>
+    <string name="passenger">Passenger</string>
+    <string name="vehicle_brand_label">Vehicle: %1$s</string>
+    <string name="start_time_label">Start Time: %1$s</string>
+    <string name="end_time_label">End Time: %1$s</string>
+    <string name="price_per_km_label">Price per km: %1$.2f</string>
+    <string name="driver_rating_label">Rating: %1$.1f</string>
+    <string name="driver_name_format">Driver: %1$s %2$s</string>
+    <string name="price_format">Price: $%.2f</string>
+    <string name="distance_format">Distance: %.2f km</string>
+    <string name="price">Price: %2$d</string>
+</resources>
