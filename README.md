@@ -15,7 +15,11 @@ a certain schedule
 • Google Maps for locations
 • Places API for searching locations
 
-https://github.com/user-attachments/assets/3082a2c9-9cbe-4a19-9e73-51cd2224a28e
+Video of the mobile app:
+
+https://github.com/user-attachments/assets/78f6d46a-e94c-4b8a-9e88-34444d6fd93c
+
+
 ![image](https://github.com/user-attachments/assets/5aefe636-7c7c-4c79-b139-98fb835033a9)
 ![image](https://github.com/user-attachments/assets/45bb59c7-5c44-40d4-b776-70ecd5a544bf)
 ![image](https://github.com/user-attachments/assets/c97fdf20-1bef-4fdb-a02a-d9eef07ee47e)
