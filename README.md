@@ -1,12 +1,12 @@
 # Carpooling Android Application
 ## Tech Stack 
-- Java
-- SQLite database.
-- Google Maps for locations
-- Places API for searching locations
+- Android Programming(Java)
   - RecyclerView to view offered vehicles/drivers
   - Navigation between activities with intents
   - Fragments for portrait/landscape different view of certain schedule
+- SQLite database.
+- Google Maps for locations
+- Places API for searching locations
 
 ## Roles
 - Passenger
