@@ -4,10 +4,9 @@
 - SQLite database.
 - Google Maps for locations
 - Places API for searching locations
-  • RecyclerView to view offered vehicles/drivers
-  • Navigation between activities with intents
-  • Fragments for portrait/landscape different view of
-  a certain schedule
+  - RecyclerView to view offered vehicles/drivers
+  - Navigation between activities with intents
+  - Fragments for portrait/landscape different view of certain schedule
 
 ## Roles
 - Passenger
